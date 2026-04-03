@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Aurora | Explore the Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <nav>
+        <a href="#home" class="logo">
+            <img src="aurora logo.png" alt="Project Aurora logo">
+        </a>
+        <div class="nav-actions">
+            <button class="mode-toggle" id="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#join">Join</a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <header id="home">
+            <h1>Project Aurora</h1>
+            <p>The front page of a futuristic vision, where each concept opens into its own experience.</p>
+            <a href="#concepts" class="btn">Explore Concepts</a>
+        </header>
+
+        <section id="concepts">
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Quantum Nexus</h3>
+                    <p>Explore the intersection of AI and deep-tech innovation.</p>
+                    <a href="nexus.html" class="link-btn">Enter Nexus</a>
+                </div>
+
+                <div class="card">
+                    <h3>Ethereal Portal</h3>
+                    <p>A digital landscape designed for infinite creative expression.</p>
+                    <a href="portal.html" class="link-btn">Open Portal</a>
+                </div>
+
+                <div class="card">
+                    <h3>The Beacon</h3>
+                    <p>Building the blueprint for global collaboration and change.</p>
+                    <a href="beacon.html" class="link-btn">View Beacon</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="section-header">
+                <span>Testimonials</span>
+                <h2>What creators say about Aurora</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Aurora made our launch feel futuristic and polished. The concept pages are clean and extremely easy to navigate."</p>
+                    <span>- Maya S., Product Designer</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The contact section and page flow feel professional. This site looks like a premium concept showcase."</p>
+                    <span>- Leo R., Startup Founder</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Everything from the hero visuals to the interaction is on point. Aurora is a great platform for creative ideas."</p>
+                    <span>- Noor A., Creative Lead</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-header">
+                <span>About Aurora</span>
+                <h2>What makes this project unique</h2>
+            </div>
+            <p>Project Aurora is built as a portfolio of bold digital concepts. The homepage introduces the three main ideas, and each concept opens into a dedicated page.</p>
+        </section>
+
+        <section id="join">
+            <div class="section-header">
+                <span>Join the Journey</span>
+                <h2>Send us a message</h2>
+            </div>
+            <p>If you want to be part of this future, send a note and we’ll follow up with the latest updates.</p>
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xlgowlak" method="POST">
+                <input type="hidden" name="_subject" value="New Aurora contact message">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us what you’re interested in..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p class="form-success" id="form-success" hidden>Thanks! Your message has been received.</p>
+                <p class="form-error" id="form-error" hidden>Please sign up for Formspree and replace the form action with your real Formspree form ID.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Project Aurora. Built with curiosity.</p>
+        <p>A subdivision of Eazy group</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
